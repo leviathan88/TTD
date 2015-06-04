@@ -1,0 +1,18 @@
+As a summary, the following are the five rules of the test-first approach:
+
+•Don't write any new tests if there is not a new coding task.
+•A new test must always fail.
+•A new test should be as simple as possible.
+•Write only the minimum necessary code to fix a failing test, and don't bother with quality during this activity.
+•You can only clean or redesign your code if all the tests pass. Try to do it in each cycle if possible.
+
+To sum up, every test must have the following three phases:
+
+•Set up/Arrange: In this phase, we set up the state of the system in a well-known state. This implies choosing the correct input parameters, setting up the correct data in the database, or making the third-party systems return a well-known response.
+•Act: In this phase, we perform the operation we are testing. As a general rule, the act phase of each test should involve only one action.
+•Assert: In this phase, we check the return value of the operation and the side effects.
+
+There are two main approaches to test-first: traditional TDD and BDD. In traditional TDD, or component unit testing, 
+we test components (classes, functions, and so on) in isolation from other components. 
+In BDD, we test simple user actions on the system, also known as features, in isolation from other features. 
+Both are forms of unit testing, but due to historic reasons, we reserve the term "unit testing" for component unit testing.
