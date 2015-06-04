@@ -1,4 +1,10 @@
 //The beforeEach function is executed once before each it function inside a given describe scope
+var chai = require('chai'),
+    expect = chai.expect,
+    validatorWith = require('../lib/validator'),
+    nonPositiveValidationRule = require('../lib/rules/nonPositive'),
+    nonDivisibleValidationRule = require('../lib/rules/nonDivisible');
+
 describe('A Validator', function() {
   var validator;
   beforeEach(function() {
